@@ -26,6 +26,10 @@ module.exports = {
         exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
+      {
+        test: /\.png$/,
+        type: "asset/resource",
+      },
     ],
   },
   plugins: [
